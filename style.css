@@ -1,251 +1,307 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: inter, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
+body {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
-nav{
-    background-color:#FDBE30;
-    padding: 16px 32px;
+nav {
+  background-color: #fdbe30;
+  padding: 16px 32px;
 }
 
-main{
-    padding: 64px
+main {
+  padding: 64px;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
-ul li{
-    list-style: none;
-    transition: transform .2s ease-in-out;
+ul li {
+  list-style: none;
+  transition: transform 0.2s ease-in-out;
 }
 
 ul li:hover {
-    transform: scale(1.2);
-    transition: transform .2s ease-in-out;
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
 }
-
 
 ul a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #5B1600;
-    transition: color .2s ease-in-out;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #5b1600;
+  transition: color 0.2s ease-in-out;
 }
 
-ul a:hover{
-    color: #f8f8f5;
-    transition: color .2s ease-in-out;
-}
-    
-
-.flex-row{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap: 1rem;
-    flex-wrap: wrap;
+ul a:hover {
+  color: #f8f8f5;
+  transition: color 0.2s ease-in-out;
 }
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items:center;
-    gap: 1rem;
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.teste{
-    max-width: 50%;
-}
-#apresentacao img{
-    max-width: 600px;
-}
-h1 h2 h4{
-    font-family: inik, arial, helvet, sans-serif;
-   
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
 }
 
-h1{
-    font-size: 2rem;
-    color:#5B1600;
+.teste {
+  max-width: 50%;
+}
+#apresentacao img {
+  max-width: 600px;
+}
+h1 h2 h4 {
+  font-family: inik, arial, helvet, sans-serif;
 }
 
-h4{
-    font-size:1.3rem;
+h1 {
+  font-size: 2rem;
+  color: #5b1600;
 }
 
-p, i{
-    font-size:1.3rem;
+h4 {
+  font-size: 1.3rem;
 }
 
-.btn-primary{
-    width: 200px;
-    height: 60px;
-    border-radius: 8px;
-    border: 4px solid #F16911;
-    text-align: center;
-    text-decoration: none;
-    color:#5B1600;
-    background-color: #FDBE30;
-    padding: 10px;
-    font-size:18px;
-    font-style: bold;
-    box-shadow: 2px 4px 4px #9A8E21;
-    margin-top: 32px;
-
+p,
+i {
+  font-size: 1.3rem;
 }
 
-.btn-primary:hover{
-    background-color: #9A8E21;
-    color: #f8f8f5;
+.btn-primary {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  border: 4px solid #f16911;
+  text-align: center;
+  text-decoration: none;
+  color: #5b1600;
+  background-color: #fdbe30;
+  padding: 10px;
+  font-size: 18px;
+  font-style: bold;
+  box-shadow: 2px 4px 4px #9a8e21;
+  margin-top: 32px;
 }
 
-
-#top3{
-    align-items: center;
-    margin-top:10rem;
-    
+.btn-primary:hover {
+  background-color: #9a8e21;
+  color: #f8f8f5;
 }
 
-#top3 img{
-    width:240px;
-    height: 70px;
-    margin-bottom: 2rem;
-    border-radius: 0px;
-   
+#top3 {
+  align-items: center;
+  margin-top: 10rem;
 }
 
-
-article{
-    max-width: 255px;
-    height: 475px;
-    border-radius: 10px;
-    border: 3px solid #F16911;
-    background-color: #f8f8f5;
-    
-}
-article header{
-    width: 100%;
+#top3 img {
+  width: 240px;
+  height: 70px;
+  margin-bottom: 2rem;
+  border-radius: 0px;
 }
 
-article main{
-    padding: 5px;
+article {
+  max-width: 255px;
+  height: 475px;
+  border-radius: 10px;
+  border: 3px solid #f16911;
+  background-color: #f8f8f5;
+}
+article header {
+  width: 100%;
 }
 
-article h2{
-    padding: 4px;
-    font-size: 16px;
+article main {
+  padding: 5px;
 }
 
-article p{
-    padding: 4px;
-    font-size: 14px;
-
+article h2 {
+  padding: 4px;
+  font-size: 16px;
 }
 
- article span{
-    font-size:18px;
-    font-family: inik, arial, helvet, sans-serif;   
-    color: #A62929;
-    padding-left: 90px;
-    padding-top: 8px;
-    padding-bottom:4px;
-  
-
+article p {
+  padding: 4px;
+  font-size: 14px;
 }
 
-article button{
-    width: 130px;
-    height: 45px;
-    border-radius: 8px;
-    border: 4px solid #F16911;
-    text-align: center;
-    text-decoration: none;
-    color:#5B1600;
-    background-color: #FDBE30;
-    padding: 10px;
-    font-size:18px;
-    font-style: bold;
-    box-shadow: 2px 4px 4px #9A8E21;
+article span {
+  font-size: 18px;
+  font-family: inik, arial, helvet, sans-serif;
+  color: #a62929;
+  padding-left: 90px;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
 
-article button:hover{
-    background-color: #9A8E21;
-    color: #f8f8f5;
+article button {
+  width: 130px;
+  height: 45px;
+  border-radius: 8px;
+  border: 4px solid #f16911;
+  text-align: center;
+  text-decoration: none;
+  color: #5b1600;
+  background-color: #fdbe30;
+  padding: 10px;
+  font-size: 18px;
+  font-style: bold;
+  box-shadow: 2px 4px 4px #9a8e21;
+}
+
+article button:hover {
+  background-color: #9a8e21;
+  color: #f8f8f5;
 }
 
 .ellipsis {
-    overflow: hidden;
-    line-height: 1.5;
-    max-height: 6em; 
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: 6em;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
-
-
-#encomenda{
-    background-image: url("./img/banner.png");
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
+#encomenda {
+  background-image: url("./img/banner.png");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#encomenda{
-    align-items: left;
-    margin-top:10rem;
-    
+#encomenda {
+  align-items: left;
+  margin-top: 10rem;
 }
 
-#encomenda div{
-    max-width: 50%;
+#encomenda div {
+  max-width: 50%;
 }
 
-#encomenda h1{
-    margin-left: 2rem;
-    margin-top: 4rem;
+#encomenda h1 {
+  margin-left: 2rem;
+  margin-top: 4rem;
 }
 
-#encomenda p{
-    margin-left: 2rem;
-    margin-top: 1rem;
+#encomenda p {
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
+.btn-secundary {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  border: 4px solid #f16911;
+  text-align: center;
+  text-decoration: none;
+  color: #5b1600;
+  background-color: #fdbe30;
+  padding: 10px;
+  font-size: 18px;
+  font-style: bold;
+  box-shadow: 2px 4px 4px #9a8e21;
+  margin-top: 32px;
+  margin-left: 32px;
+}
 
-.btn-secundary{
-    width: 200px;
-    height: 60px;
-    border-radius: 8px;
-    border: 4px solid #F16911;
-    text-align: center;
-    text-decoration: none;
-    color:#5B1600;
-    background-color: #FDBE30;
-    padding: 10px;
-    font-size:18px;
-    font-style: bold;
-    box-shadow: 2px 4px 4px #9A8E21;
-    margin-top: 32px;
-    margin-left: 32px;
-    
-    }
-    
-    .btn-secundary:hover{
-        background-color: #9A8E21;
-        color: #f8f8f5;
-    }
+.btn-secundary:hover {
+  background-color: #9a8e21;
+  color: #f8f8f5;
+}
 
+/* INICIO DA ESTILIZACAO DO CARDAPIO */
 
+section.pratos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  color: #5b1600;
+}
+
+th:nth-child(1) {
+  width: 200px;
+}
+th:nth-child(2) {
+  width: 500px;
+}
+th:nth-child(3) {
+  width: 100px;
+}
+
+td {
+  font-size: 20px;
+}
+
+td:nth-child(1) {
+  font-size: 1.75rem;
+  padding-right: 30px;
+}
+
+td:nth-child(3) {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+footer hr {
+  margin-bottom: 80px;
+  border-color: #fdbe30;
+}
+/* FIM DA ESTILIZACAO DO CARDAPIO */
