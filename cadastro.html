@@ -31,53 +31,60 @@
         <li class="teste"><a class="teste" href="inicio.html">Início</a></li>
         <li><a href="cardapio.html">Cardápio</a></li>
         <li><a href="index.html">Buffet</a></li>
-        <li><a href="index.html">Cadastre-se</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="titulo-cadastro">
-    <h1>Faça Sua Encomenda no Restaurante da Dona Zélia!</h1> <br>
-    <p>Além de encomendas, nosso formulário está à disposição para esclarecer dúvidas e fornecer mais
-      informações.<br>
-      <em>Entre em contato conosco e teremos o prazer de ajudar!
-    </p></em>
-  </div>
+  <main>
+    <section class="titulo-cadastro">
+      <h1>Faça Sua Encomenda no Restaurante da Dona Zélia!</h1>
+      <p>Além de encomendas, nosso formulário está à disposição para esclarecer dúvidas e fornecer mais informações.
+        <br><em>Entre em contato conosco e teremos o prazer de ajudar!</em>
+      </p>
+    </section>
 
-  <main class="principal-cadastro">
-    <form class="formulario">
-      <div class="caixa-formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" class="campo-formulario" required>
-      </div>
+    <section class="principal-cadastro">
+      <form class="formulario" action="#" method="POST">
+        <section class="caixa-formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite o seu nome:" class="campo-formulario" required>
+        </section>
 
-      <div class="caixa-formulario">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" class="campo-formulario" required>
-      </div>
+        <section class="caixa-formulario">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail:" class="campo-formulario"
+            required>
+        </section>
 
-      <div class="caixa-formulario">
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" class="campo-formulario" required>
-      </div>
+        <section class="caixa-formulario">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" class="campo-formulario"
+            required>
+        </section>
 
-      <div class="caixa-formulario">
-        <label for="comidas">Escolha sua comida favorita do nosso Top</label>
-        <select id="comidas" name="comidas" class="campo-formulario" multiple>
-          <option value="">Moqueca de arraia</option>
-          <option value="">Carne de sol na moringa</option>
-          <option value="">Guizado marinho apimentado</option>
-        </select>
-      </div>
+        <section class="caixa-formulario">
+          <label for="comidas">Escolha o seu top 3:</label>
+          <select id="comidas" name="comidas" class="campo-formulario">
+            <option value="moqueca">Moqueca de arraia</option>
+            <option value="carneDeSol">Carne de sol na moringa</option>
+            <option value="guizadoMarinho">Guizado marinho apimentado</option>
+          </select>
+        </section>
 
-      <div class="caixa-formulario">
-        <label for="mensagem">Mensagem:</label>
-        <textarea placeholder="Deixe sua opinião e concorra aos nossos sorteios mensais!" id="mensagem" name="mensagem"
-          class="campo-formulario" rows="4"></textarea>
-      </div>
 
-      <div class="caixa-formulario">
-        <button type="submit" class="botao-enviar">Enviar</button>
-      </div>
-    </form>
+        <section class="caixa-formulario">
+          <label for="mensagem">Mensagem:</label>
+          <textarea placeholder="Deixe sua opinião e concorra aos nossos sorteios mensais!" id="mensagem"
+            name="mensagem" class="campo-formulario" rows="10"></textarea>
+        </section>
+
+        <section class="caixa-formulario">
+          <button type="submit" class="botao-enviar">Enviar</button>
+        </section>
+      </form>
+    </section>
   </main>
+</body>
+
+</html>
