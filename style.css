@@ -238,8 +238,6 @@ section.pratos {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  margin: 0 auto;
 }
 
 table {
@@ -249,27 +247,31 @@ table {
 th {
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
   color: #5b1600;
 }
 
 th:nth-child(1) {
-  width: 200px;
+  width: 12rem;
 }
 th:nth-child(2) {
-  width: 500px;
+  width: 30rem;
 }
 th:nth-child(3) {
-  width: 100px;
+  width: 7rem;
 }
 
 td {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 td:nth-child(1) {
   font-size: 1.75rem;
-  padding-right: 30px;
+  padding-right: 2rem;
+}
+
+td:nth-child(2) {
+  padding-right: 2rem;
 }
 
 td:nth-child(3) {
@@ -283,25 +285,132 @@ figure {
 }
 
 img {
-  margin: 20px;
+  margin: 1rem;
 }
 
 h2 {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 1rem;
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
   text-decoration: underline;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 2.5rem;
+  padding-top: 2.8rem;
 }
 
 footer hr {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   border-color: #fdbe30;
+}
+
+/* Estilos específicos para telas menores que 1090px */
+@media screen and (max-width: 1090px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .table tr {
+    display: block;
+  }
+
+  .table td:first-of-type {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Estilos específicos para telas menores que 480px (mobile) */
+@media screen and (max-width: 480px) {
+  .cardapio {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  .table img {
+    width: 18rem;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table td {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .table tr {
+    display: block;
+    border: 1px solid #5b1600;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fdbe30;
+  }
+
+  .table td:first-of-type {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+  }
+
+  /* Menu Mobile */
+  .flex-row ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .menu-toggle span {
+    height: 0.2rem;
+    width: 1.5rem;
+    background-color: #5b1600;
+    margin: 0.25rem 0;
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 /* FIM DA ESTILIZACAO DO CARDAPIO */
