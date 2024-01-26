@@ -305,3 +305,193 @@ footer hr {
   border-color: #fdbe30;
 }
 /* FIM DA ESTILIZACAO DO CARDAPIO */
+
+/* INICIO DA ESTILIZACAO DO BUFFET */
+.buffet{
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.peca-buffet{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buffet-escolha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.buffet-escolha h2{
+  font-size: 2rem;
+  color: #5b1600;
+  text-decoration: none;
+}
+.buffet-escolha h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+
+}
+
+.buffet p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.peca-buffet img{
+  grid-column: 2;
+  max-width: 450px;
+  padding-left: 10rem;
+}
+.peca-buffet span{
+  color: #5b1600;
+  font-weight: 700;
+}
+
+.buffet-cardapio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+}
+.buffet-cardapio h2{
+  grid-column: 1/-1;
+  font-size: 2.5rem;
+  color: #5b1600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.buffet-cardapio img{
+  width: 200px;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+.buffet-caracteristicas{
+  border-radius: 1rem;
+  border: 3px solid #f16911;
+  background-color: #f8f8f5;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.buffet-caracteristicas p{
+  text-align: center;
+}
+
+.buffet-orcamento{
+  margin-top: 8rem;
+  background-image: url('./img/Orçamento.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buffet-orcamento h2{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1090px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  nav ul {
+      margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+  /* Menu Mobile */
+  .flex-row ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .menu-toggle span {
+    height: 0.2rem;
+    width: 1.5rem;
+    background-color: #5b1600;
+    margin: 0.25rem 0;
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .peca-buffet{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buffet-escolha{
+    gap: 0.5rem;
+  }
+
+  .buffet-escolha h2{
+    font-size: 2rem;
+  }
+
+  .buffet p, h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .buffet h1{
+    font-size: 2.2rem;
+  }
+  .peca-buffet img{
+    max-width: 450px;
+    padding-left: 3rem;
+  }
+
+  .buffet-cardapio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .buffet-cardapio h2{
+    font-size: 2rem;
+  }
+  .buffet-caracteristicas{
+    padding: 0.8rem;
+    margin: 1rem;
+  }
+  .buffet-orcamento{
+    margin-top: 4rem;
+  }
+  buffet-orcamento h2{
+    font-size: 2rem;
+  }
+  
+}
+
+
+
+
+
+/* FIM DA ESTILIZACAO DO CARDAPIO */
