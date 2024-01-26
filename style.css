@@ -364,6 +364,16 @@ footer hr {
   text-shadow: #5b1600;
 }
 
+.caixa-formulario select {
+  font-family: inik, arial, helvet, sans-serif;
+  font-size: 1rem;
+}
+
+.caixa-formulario label span{
+  color: #ff0000;
+  font-family: inik, arial, helvet, sans-serif;
+}
+
 .caixa-formulario textarea {
   resize: none;
 }
