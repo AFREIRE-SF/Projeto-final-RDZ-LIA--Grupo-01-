@@ -67,9 +67,11 @@ ul a:hover {
 .m-w-50 {
   max-width: 50%;
 }
+
 #apresentacao img {
   max-width: 600px;
 }
+
 h1 h2 h4 {
   font-family: inik, arial, helvet, sans-serif;
 }
@@ -128,6 +130,7 @@ article {
   border: 3px solid #f16911;
   background-color: #f8f8f5;
 }
+
 article header {
   width: 100%;
 }
@@ -357,9 +360,11 @@ th {
 th:nth-child(1) {
   width: 12rem;
 }
+
 th:nth-child(2) {
   width: 30rem;
 }
+
 th:nth-child(3) {
   width: 7rem;
 }
@@ -517,3 +522,152 @@ footer hr {
   }
 }
 /* FIM DA ESTILIZACAO DO CARDAPIO */
+
+
+/*Estilizando o Cadastro*/
+
+.titulo-cadastro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.titulo-cadastro h1 {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.titulo-cadastro p {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.cadastro-formulario {
+    text-align: center;
+}
+
+.principal-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 2rem;
+}
+
+.formulario {
+  background-color: #FDBE30;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  max-width: 50rem;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.caixa-formulario {
+  margin-bottom: 1.125rem;
+
+}
+
+.caixa-formulario label {
+  font-family: inik, arial, helvet, sans-serif;
+  font-size: 1.1rem;
+  text-shadow: #5b1600;
+}
+
+.caixa-formulario select {
+  font-family: inik, arial, helvet, sans-serif;
+  font-size: 1rem;
+}
+
+.caixa-formulario label span{
+  color: #ff0000;
+  font-family: inik, arial, helvet, sans-serif;
+}
+
+.caixa-formulario textarea {
+  resize: none;
+}
+
+.campo-formulario {
+  width: 100%;
+  padding: 0.625rem;
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
+  box-sizing: border-box;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+
+
+.botao-enviar {
+  background-color: #9A8E21;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao-enviar:hover {
+  background-color: #FDBE30;
+}
+
+.botao-enviar:hover {
+  background-color: #FDBE30;
+}
+
+/* Renposividade */ 
+@media screen and (max-width: 1090px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  nav ul {
+    margin-top: 0.5rem;
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    .cardapio {
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+    }
+  
+
+    h1 {
+      font-size: 2.2rem;
+    }
+    
+  
+    /* Menu Mobile */
+    .flex-row ul {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+
+    .menu-toggle span {
+      height: 0.2rem;
+      width: 1.5rem;
+      background-color: #5b1600;
+      margin: 0.25rem 0;
+      display: block;
+    }
+
+    .menu-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+  }
+    /* Finalizando estilização cadastro */
