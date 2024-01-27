@@ -251,17 +251,12 @@ article button:hover{
 /* INÍCIO DA ESTILIZACAO DO SOBRE */
 
 .sobre {
-  background-image: url("/Projeto-final-RDZ-LIA--Grupo-01-/img/banners\ site\ \(5\)\ 1.png");
-  background-color: #FDBE30;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
   
 }
   
 .texto-sobre {
   text-align: justify;
-  max-width: calc(100% - 600px);
+  max-width: 37.5rem;
   
 }
   
