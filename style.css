@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+nav{
+    background-color:#FDBE30;
+    padding: 16px 32px;
+}
+
+main{
+    padding: 64px
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+ul li{
+    list-style: none;
+    transition: transform .2s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+}
+
+
+ul a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #5B1600;
+    transition: color .2s ease-in-out;
+}
+
+ul a:hover{
+    color: #f8f8f5;
+    transition: color .2s ease-in-out;
+}
+    
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    gap: 1rem;
+}
+
+.teste{
+    max-width: 50%;
+}
+#apresentacao img{
+    max-width: 600px;
+}
+h1 h2 h4{
+    font-family: inik, arial, helvet, sans-serif;
+   
+}
+
+h1{
+    font-size: 2rem;
+    color:#5B1600;
+}
+
+h4{
+    font-size:1.3rem;
+}
+
+p, i{
+    font-size:1.3rem;
+}
+
+.btn-primary{
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: 4px solid #F16911;
+    text-align: center;
+    text-decoration: none;
+    color:#5B1600;
+    background-color: #FDBE30;
+    padding: 10px;
+    font-size:18px;
+    font-style: bold;
+    box-shadow: 2px 4px 4px #9A8E21;
+    margin-top: 32px;
+
+}
+
+.btn-primary:hover{
+    background-color: #9A8E21;
+    color: #f8f8f5;
+}
+
+
+#top3{
+    align-items: center;
+    margin-top:10rem;
+    
+}
+
+#top3 img{
+    width:240px;
+    height: 70px;
+    margin-bottom: 2rem;
+    border-radius: 0px;
+   
+}
+
+
+article{
+    max-width: 255px;
+    height: 475px;
+    border-radius: 10px;
+    border: 3px solid #F16911;
+    background-color: #f8f8f5;
+    
+}
+article header{
+    width: 100%;
+}
+
+article main{
+    padding: 5px;
+}
+
+article h2{
+    padding: 4px;
+    font-size: 16px;
+}
+
+article p{
+    padding: 4px;
+    font-size: 14px;
+
+}
+
+ article span{
+    font-size:18px;
+    font-family: inik, arial, helvet, sans-serif;   
+    color: #A62929;
+    padding-left: 90px;
+    padding-top: 8px;
+    padding-bottom:4px;
+  
+
+}
+
+article button{
+    width: 130px;
+    height: 45px;
+    border-radius: 8px;
+    border: 4px solid #F16911;
+    text-align: center;
+    text-decoration: none;
+    color:#5B1600;
+    background-color: #FDBE30;
+    padding: 10px;
+    font-size:18px;
+    font-style: bold;
+    box-shadow: 2px 4px 4px #9A8E21;
+}
+
+article button:hover{
+    background-color: #9A8E21;
+    color: #f8f8f5;
+}
+
+.ellipsis {
+    overflow: hidden;
+    line-height: 1.5;
+    max-height: 6em; 
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+
+
+
+#encomenda{
+    background-image: url("./img/banner.png");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#encomenda{
+    align-items: left;
+    margin-top:10rem;
+    
+}
+
+#encomenda div{
+    max-width: 50%;
+}
+
+#encomenda h1{
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+#encomenda p{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+.btn-secundary{
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: 4px solid #F16911;
+    text-align: center;
+    text-decoration: none;
+    color:#5B1600;
+    background-color: #FDBE30;
+    padding: 10px;
+    font-size:18px;
+    font-style: bold;
+    box-shadow: 2px 4px 4px #9A8E21;
+    margin-top: 32px;
+    margin-left: 32px;
+    
+    }
+    
+    .btn-secundary:hover{
+        background-color: #9A8E21;
+        color: #f8f8f5;
+    }
+
+    /* INÍCIO DA ESTILIZACAO DO SOBRE */
+
+    .sobre {
+        background-image: url("/img/banners\ site\ \(5\)\ 1.png");
+        background-color: #FDBE30;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: scroll;
+  
+    }
+  
+    .texto-sobre {
+        text-align: justify;
+        max-width: calc(100% - 600px);
+  
+    }
+  
+    .texto-sobre h1 {
+        margin-bottom: 80px;
+        font-size: 2rem;
+    }
+  
+    .texto-sobre h2, h3, h4, h5, h6 {
+        font-size: 1.7rem;
+        color:#5B1600;
+        margin-bottom: 35px;
+    }
+  
+    .texto-sobre p {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+  
+    /* Estilos específicos para telas menores que 1090px */
+
+    @media screen and (max-width: 1090px) {
+      nav {
+          flex-direction: column;
+          text-align: center;
+      } nav ul {
+          margin-top: 0.5rem;
+      } .texto-sobre {
+          max-width: calc(100% - 300px);
+      }
+    }
+  
+    /* Estilos específicos para telas menores que 825px */
+  
+    @media screen and (max-width: 825px) {
+      .texto-sobre {
+        max-width: calc(100% - 240px);
+      }
+      .texto-sobre h1 {
+        margin-bottom: 50px;
+        font-size: 1.7rem;
+      }
+  
+      .texto-sobre h2, h3, h4, h5, h6 {
+        font-size: 1.5rem;
+        color:#5B1600;
+        margin-bottom: 35px;
+      }
+  
+      .texto-sobre p {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+      }
+    }
+  
+    /* Estilos específicos para telas menores que 630px */
+  
+    @media screen and (max-width: 630px) {
+      .texto-sobre {
+        max-width: calc(100% - 180px);
+      }
+      .texto-sobre h1 {
+        margin-bottom: 50px;
+        font-size: 1.6rem;
+      }
+  
+      .texto-sobre h2, h3, h4, h5, h6 {
+        font-size: 1.4rem;
+        color:#5B1600;
+        margin-bottom: 35px;
+      }
+  
+      .texto-sobre p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+      }
+    }
+  
+    /* Estilos específicos para telas menores que 555px */
+  
+    @media screen and (max-width: 555px) {
+      .texto-sobre {
+        max-width: calc(100% - 150px);
+      }
+      .texto-sobre h1 {
+        margin-bottom: 50px;
+        font-size: 1.4rem;
+      }
+  
+      .texto-sobre h2, h3, h4, h5, h6 {
+        font-size: 1.2rem;
+        color:#5B1600;
+        margin-bottom: 35px;
+      }
+  
+      .texto-sobre p {
+        margin-bottom: 20px;
+        font-size: 1.0rem;
+      }
+    }
+  
+    /* Estilos específicos para telas menores que 480px (mobile) */
+    
+    @media screen and (max-width: 480px) {
+      .texto-sobre {
+        max-width: calc(100% - 90px);
+        font-size: 0.8rem;
+      }
+  
+      .texto-sobre h1 {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+  
+      }
+  
+      .texto-sobre h2, h3, h4, h5, h6 {
+        font-size: 0.8rem;
+  
+      } 
+      .texto-sobre p {
+        margin-bottom: 20px;
+        font-size: 0.6rem;
+      }
+    
+    /* Menu Mobile */
+      .flex-row ul {
+        display: none;
+      }
+  
+      .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+      }
+  
+      .menu-toggle span {
+        height: 0.2rem;
+        width: 1.5rem;
+        background-color: #5b1600;
+        margin: 0.25rem 0;
+        display: block;
+      }
+  
+      .menu-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  
+    /* FIM DA ESTILIZACAO DO SOBRE */
+
+
+
