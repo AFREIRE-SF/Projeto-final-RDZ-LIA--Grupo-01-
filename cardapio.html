@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página referente ao cardápio do restaurante chamado dona Zelia que fornece a anos a melhor da comida nordestina com pratos típicos de cada região. "
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" sizes="48x48" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +25,20 @@
   <body>
     <header>
       <nav class="flex-row">
-        <img class="logo" src="http:/img/logo.png" alt="Logo da empresa, em formato circular,
-        o background da logo é composto por uma imagem em amarelo, com detalhes que lebram xilogravuras em marrom, 
-        com cactos do tipo Mandacaru em verde e as letras DZ na cor marrom, ambas as letras representam Dona Zélia"/>
-      
+        <div class="menu-mobile">
+          <img
+            class="logo"
+            src="http:/img/logo.png"
+            alt="Logo da empresa, em formato circular, o background da logo é composto por uma imagem em amarelo, com detalhes que lebram xilogravuras em marrom, com cactos do tipo Mandacaru em verde e as letras DZ na cor marrom, ambas as letras representam Dona Zélia"
+          />
+
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
         <ul class="flex-row">
           <li class="teste"><a class="teste" href="inicio.html">Início</a></li>
           <li><a href="cardapio.html">Cardápio</a></li>
@@ -35,10 +49,12 @@
       </nav>
     </header>
 
+    <h1>Cardápio D. Zélia</h1>
+
     <main class="cardapio">
       <h1>Cardápio do Restaurante</h1>
       <section class="pratos">
-        <table>
+        <table class="table">
           <thead>
             <tr>
               <th>Pratos</th>
@@ -52,7 +68,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (1).png"
+                    src="./img/pratos_1.webp"
                     alt="Moqueca - ensopado de peixe e/ou frutos do mar, que contém também cebola, tomate, pimentão, coentro e pimenta malagueta, e que é servido com arroz branco."
                   />
                   <figcaption>Moqueca</figcaption>
@@ -69,7 +85,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (2).png"
+                    src="./img/pratos_2.webp"
                     alt="Caruru prato tradicional afro-brasileiro feito com quiabo e camarão seco acompanhado de feijão vatapa arroz de camarão e farofa"
                   />
                   <figcaption>Caruru</figcaption>
@@ -86,7 +102,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (4).png"
+                    src="./img/pratos_3.webp"
                     alt="Cuscuz - Cuscuz feito com milho e cozido no vapor. Acompanhado de ovos,
                     manteiga, salsicha, carne de sol."
                   />
@@ -103,7 +119,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (8).png"
+                    src="./img/pratos_4.webp"
                     alt="Carne Seca com Abóbora - Carne seca, abóbora, alho, cebola, azeite de oliva, pimenta do
                     reino e cheiro verde cozidos."
                   />
@@ -120,7 +136,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (9).png"
+                    src="./img/pratos_5.webp"
                     alt="Feijoada - feijoada feito com feijão preto e linguiça de porco, acompanha arroz branco, couve refogada, banana frita e laranja."
                   />
                   <figcaption>Feijoada</figcaption>
@@ -136,7 +152,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (11).png"
+                    src="./img/pratos_6.webp"
                     alt="Baião de Dois - Arroz com feijão, combinados com carne-seca, queijo de coalho e bacon."
                   />
                   <figcaption>Baião de Dois</figcaption>
@@ -152,7 +168,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (14).png"
+                    src="./img/pratos_7.webp"
                     alt="Moqueca de Camarão Paraibana - Massa penne, bacon, ovos, queijo parmesão"
                   />
                   <figcaption>Moqueca de Camarão Paraibana</figcaption>
@@ -169,7 +185,7 @@
               <td>
                 <figure>
                   <img
-                    src="./img/pratos (15).png"
+                    src="./img/pratos_8.webp"
                     alt="Vatapa Baiano - Pão amanhecido, camarões secos, amendoim, castanha-de-caju,
                   leite de coco, dendê, pimentões, cebola, alho, refogados e
                   cozidos."
