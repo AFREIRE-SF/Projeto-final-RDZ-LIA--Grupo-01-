@@ -1,3 +1,5 @@
+/* COMEÇO DA ESTILIZACAO DA PÁG INÍCIO */
+
 * {
   margin: 0;
   padding: 0;
@@ -62,12 +64,14 @@ ul a:hover {
   gap: 1rem;
 }
 
-.teste {
+.m-w-50 {
   max-width: 50%;
 }
+
 #apresentacao img {
   max-width: 600px;
 }
+
 h1 h2 h4 {
   font-family: inik, arial, helvet, sans-serif;
 }
@@ -126,6 +130,7 @@ article {
   border: 3px solid #f16911;
   background-color: #f8f8f5;
 }
+
 article header {
   width: 100%;
 }
@@ -232,14 +237,113 @@ article button:hover {
   color: #f8f8f5;
 }
 
+#promocao{
+    padding-top:10rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: #5b1600;
+}
+
+#cardspromocao{
+    padding: 0;
+}
+
+#cardspromocao img{
+    size: 20%;
+}
+
+#cardspromocao .cardbtn{
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  border: 4px solid #f16911;
+  text-align: center;
+  text-decoration: none;
+  color: #5b1600;
+  background-color: #fdbe30;
+  padding: 10px;
+  font-size: 18px;
+  font-style: bold;
+  box-shadow: 2px 4px 4px #9a8e21;
+  margin-top: 32px;
+    align-self: center;
+    justify-self: center;
+}
+
+#cardspromocao .cardbtn:hover {
+    background-color: #9a8e21;
+    color: #f8f8f5;
+  }
+  
+
+.w-100{
+    width: 100%;
+}
+
+.justfy-center{
+    justify-content: center;
+}
+
+.redes{
+    text-align: center;
+    padding-top:128px;
+}
+
+.redes h1{
+    padding:30px;
+}
+
+.redes img {
+   width: 50px;
+}
+
+.footer{
+    background-color:#fdbe30;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+}
+
+footer span{
+    font-size:1rem;
+    color: #5b1600;
+    
+   
+    
+}
+/* FIM DA ESTILIZACAO DA PÁG INÍCIO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* INICIO DA ESTILIZACAO DO CARDAPIO */
 
 section.pratos {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  margin: 0 auto;
 }
 
 table {
@@ -249,27 +353,33 @@ table {
 th {
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 50px;
+  padding-bottom: 3rem;
   color: #5b1600;
 }
 
 th:nth-child(1) {
-  width: 200px;
+  width: 12rem;
 }
+
 th:nth-child(2) {
-  width: 500px;
+  width: 30rem;
 }
+
 th:nth-child(3) {
-  width: 100px;
+  width: 7rem;
 }
 
 td {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 td:nth-child(1) {
   font-size: 1.75rem;
-  padding-right: 30px;
+  padding-right: 2rem;
+}
+
+td:nth-child(2) {
+  padding-right: 2rem;
 }
 
 td:nth-child(3) {
@@ -283,26 +393,133 @@ figure {
 }
 
 img {
-  margin: 20px;
+  margin: 1rem;
 }
 
 h2 {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 1rem;
+  font-size: 2rem;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
   text-decoration: underline;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
-  padding-bottom: 20px;
+  font-size: 2.5rem;
+  padding-top: 2.8rem;
 }
 
 footer hr {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   border-color: #fdbe30;
+}
+
+/* Estilos específicos para telas menores que 1090px */
+@media screen and (max-width: 1090px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .table tr {
+    display: block;
+  }
+
+  .table td:first-of-type {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Estilos específicos para telas menores que 480px (mobile) */
+@media screen and (max-width: 480px) {
+  .cardapio {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  .table img {
+    width: 18rem;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table td {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .table tr {
+    display: block;
+    border: 1px solid #5b1600;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fdbe30;
+  }
+
+  .table td:first-of-type {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+  }
+
+  /* Menu Mobile */
+  .flex-row ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .menu-toggle span {
+    height: 0.2rem;
+    width: 1.5rem;
+    background-color: #5b1600;
+    margin: 0.25rem 0;
+    display: block;
+  }
+
+  .menu-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 /* FIM DA ESTILIZACAO DO CARDAPIO */
 
@@ -495,3 +712,151 @@ footer hr {
 
 
 /* FIM DA ESTILIZACAO DO CARDAPIO */
+
+/*Estilizando o Cadastro*/
+
+.titulo-cadastro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.titulo-cadastro h1 {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.titulo-cadastro p {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.cadastro-formulario {
+    text-align: center;
+}
+
+.principal-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 2rem;
+}
+
+.formulario {
+  background-color: #FDBE30;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  max-width: 50rem;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.caixa-formulario {
+  margin-bottom: 1.125rem;
+
+}
+
+.caixa-formulario label {
+  font-family: inik, arial, helvet, sans-serif;
+  font-size: 1.1rem;
+  text-shadow: #5b1600;
+}
+
+.caixa-formulario select {
+  font-family: inik, arial, helvet, sans-serif;
+  font-size: 1rem;
+}
+
+.caixa-formulario label span{
+  color: #ff0000;
+  font-family: inik, arial, helvet, sans-serif;
+}
+
+.caixa-formulario textarea {
+  resize: none;
+}
+
+.campo-formulario {
+  width: 100%;
+  padding: 0.625rem;
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
+  box-sizing: border-box;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+
+
+.botao-enviar {
+  background-color: #9A8E21;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao-enviar:hover {
+  background-color: #FDBE30;
+}
+
+.botao-enviar:hover {
+  background-color: #FDBE30;
+}
+
+/* Renposividade */ 
+@media screen and (max-width: 1090px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  nav ul {
+    margin-top: 0.5rem;
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    .cardapio {
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+    }
+  
+
+    h1 {
+      font-size: 2.2rem;
+    }
+    
+  
+    /* Menu Mobile */
+    .flex-row ul {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+
+    .menu-toggle span {
+      height: 0.2rem;
+      width: 1.5rem;
+      background-color: #5b1600;
+      margin: 0.25rem 0;
+      display: block;
+    }
+
+    .menu-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+  }
+    /* Finalizando estilização cadastro */
